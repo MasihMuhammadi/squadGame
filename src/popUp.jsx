@@ -15,8 +15,9 @@ const PopUp = ({correctLetter,wrongLetter,selectedAnswer,setCanPlay,playAgain,po
     if(checkWin(correctLetter,wrongLetter,selectedAnswer) == 'win' ){
        
         finalMessage = 'congratulation You win';
-        
+        setFinalAnswer = selectedAnswer;
         canPlay = false;
+     
          
     }else if(wrongLetter.length >= 4){
         finalAnswer = selectedAnswer;
